@@ -10,6 +10,16 @@ namespace E05_Carros
     {
         static void Main(string[] args)
         {
+            string control = string.Empty;
+            Car newCar01 = new Car();
+
+            while (control != "x" && control != "X")
+            {
+                Console.Clear();
+                Car.MainMenu();
+                control = Console.ReadLine();
+                Car.Run(newCar01, control);
+            } 
         }
     }
 }
